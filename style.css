@@ -251,19 +251,13 @@ body {
     }
 
     .card_theme {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         position: relative;
     }
 
-    .board{
-        margin-top: 30px;
-        grid-template: 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr;
-        gap: 10px;
-    }
-
     .card_back {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
     }
 
     .starting {
@@ -274,18 +268,14 @@ body {
     /* Parte do tabuleiro */
 
     .card {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
 
     .gameBoard {
         grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
         gap: 10px;
         justify-content: space-between;
-    }
-
-    #gameOver {
-        text-align: center;
     }
 
     #gameOver h1 {
