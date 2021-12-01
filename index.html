@@ -8,33 +8,32 @@
     <title>Jogo da Memória</title>
 </head>
 <body>
-    
-    <div id="gameBoard">
 
-        <!-- <div id="" class="card" data-icon="bootstrap">
-            <div class="card_front">
-                <img src="./assets/bootstrap.png" class="icon">
-            </div>
-            <div class="card_back">
-                &lt/&gt
-            </div>
-        </div> -->
-
-
-    </div>
-
-    <div id="gameOver">
-        <div>
-            Parabéns, você completou o jogo!
+    <div class="pacote">
+        <div class="gameChoose">
+            <h1>Escolha um tema:</h1>
+            <input type="button" value="Futebol" class="btn btnChoose active">
+            <input type="button" value="Tecnologias" class="btn btnChoose">
+            <input type="button" value="Animais" class="btn btnChoose">
         </div>
 
-        <button id="restart" onclick="restart()">Jogar Novamente</button>
+        <div class="board"></div>
 
+        <input type="button" class="btn starting" value="Iniciar Jogo" onclick="startGame()">
     </div>
 
+    <div class="gameBoard">
+    </div>
+    
+    <div id="gameOver">
+        <h1>Parabéns você completou o joguinho!</h1>
+        <button onclick="startGame()">Jogar Novamente</button>
+        <a href=""><button>Escolher outro tema</button></a>
+    </div>
+    
 
+    <script src="setTheme.js"></script>
     <script src="./game.js"></script>
-       <!--o game vai conhecero script, mas o script nao vai conhecer o game -->
     <script src="./script.js"></script>
 </body>
-</html> 
+</html>
