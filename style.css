@@ -234,3 +234,61 @@ body {
     }
     
 }
+
+@media screen and (max-width: 500px){
+    .pacote h1 {
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        font: 5px;
+    }
+
+    .btn {
+        padding: 10px;
+    }
+
+    .gameChoose {
+        top:0px;
+    }
+
+    .card_theme {
+        width: 80px;
+        height: 80px;
+        position: relative;
+    }
+
+    .board{
+        margin-top: 30px;
+        grid-template: 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr;
+        gap: 10px;
+    }
+
+    .card_back {
+        font-size: 1.9rem;
+    }
+
+    .starting {
+        width: 150px;
+        bottom: 10px;
+    }
+
+    /* Parte do tabuleiro */
+
+    .card {
+        width: 80px;
+        height: 80px;
+    }
+
+    .gameBoard {
+        grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    #gameOver {
+        text-align: center;
+    }
+
+    #gameOver h1 {
+        font-size: 1.7rem;
+    }
+}
