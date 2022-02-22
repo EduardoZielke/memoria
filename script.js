@@ -57,7 +57,7 @@ function createCardFace(face, card, element) {
         cardElementFace.appendChild(iconElement)
         cardElementFace.appendChild(iconElement)
     } else {
-        cardElementFace.innerHTML = '&lt/&gt'
+        cardElementFace.innerHTML = '😎'
     }
     element.appendChild(cardElementFace)
 }

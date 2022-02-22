@@ -18,24 +18,13 @@ body {
     width: 100%;
     height: 100%;
     background-color: darkgray;
-    position: absolute;
+    position: absolute; 
     top: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     text-align: center;
-}
-
-.pacote h1 {
-    color: white;
-    margin-bottom: 20px;
-    letter-spacing: 4px;
-}
-
-.gameChoose{
-    position: absolute;
-    top: 90px;
 }
 
 #img {
@@ -70,14 +59,11 @@ body {
     user-select: none;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.397);
     background-color: #483D8B;
-    /* background-color: #483D8B; */
 }
 
 .starting {
     background-color: rgb(28, 150, 28);
     width: 170px;
-    position: absolute;
-    bottom: 90px;
     transition: all 0.1s linear;
 }
 
@@ -94,9 +80,7 @@ body {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
-    
 }
-
 
 @keyframes showCards {
     0% {transform: scale(0.8);}
@@ -105,15 +89,14 @@ body {
 
 .gameBoard {
     animation: showCards .5s;
-    max-width: 1000px;
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
 }
 
 .card {
-    width: 170px;
-    height: 170px;
+    width: 130px;
+    height: 130px;
     position: relative;
     transform-style: preserve-3d;
     transition: transform .6s;
@@ -140,7 +123,6 @@ body {
     background-color: rgb(0, 174, 255);
     font-size: 3.3rem;
 }
-
 
 .flip {
     transform: rotateY(180deg);
@@ -182,13 +164,8 @@ body {
 
 @media screen and (max-width: 800px) {
 
-    .pacote h1 {
-        margin-bottom: 10px;
-        letter-spacing: 2px;
-    }
-
-    .gameChoose {
-        top:30px;
+    body {
+        padding: 10% 0;
     }
 
     .card_theme {
@@ -198,18 +175,12 @@ body {
     }
 
     .board{
-        margin-top: 30px;
-        grid-template: 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr;
+        grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
         gap: 10px;
     }
 
     .card_back {
         font-size: 1.9rem;
-    }
-
-    .starting {
-        width: 150px;
-        bottom: 30px;
     }
 
     /* Parte do tabuleiro */
@@ -236,18 +207,13 @@ body {
 }
 
 @media screen and (max-width: 500px){
-    .pacote h1 {
-        margin-bottom: 20px;
-        letter-spacing: 1px;
-        font: 5px;
+
+    body {
+        padding: 0;
     }
 
     .btn {
         padding: 10px;
-    }
-
-    .gameChoose {
-        top:0px;
     }
 
     .card_theme {
@@ -260,22 +226,9 @@ body {
         font-size: 1.8rem;
     }
 
-    .starting {
-        width: 150px;
-        bottom: 10px;
-    }
-
-    /* Parte do tabuleiro */
-
     .card {
         width: 100px;
         height: 100px;
-    }
-
-    .gameBoard {
-        grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
-        gap: 10px;
-        justify-content: space-between;
     }
 
     #gameOver h1 {
