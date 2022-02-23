@@ -162,7 +162,7 @@ body {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
 
     body {
         padding: 10% 0;
@@ -175,7 +175,7 @@ body {
     }
 
     .board{
-        grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
         gap: 10px;
     }
 
